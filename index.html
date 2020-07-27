@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   <div class="container">
+       <div class="row display">
+           <h1 id="display" class="col-12">0</h1>
+       </div>
+       <div class="row">
+           <button onclick="updateText('7')" class="col">7</button>
+           <button onclick="updateText('8')" class="col">8</button>
+           <button onclick="updateText('9')" class="col">9</button>
+           <button onclick="updateText('+')" class="col">+</button>
+       </div>
+       <div class="row">
+           <button onclick="updateText('4')" class="col">4</button>
+           <button onclick="updateText('5')" class="col">5</button>
+           <button onclick="updateText('6')" class="col">6</button>
+           <button onclick="updateText('-')" class="col">-</button>
+       </div>
+       <div class="row">
+           <button onclick="updateText('1')" class="col">1</button>
+           <button onclick="updateText('2')" class="col">2</button>
+           <button onclick="updateText('3')" class="col">3</button>
+           <button onclick="updateText('*')" class="col">x</button>
+       </div>
+       <div class="row">
+           <button onclick="reset()" class="col">C</button>
+           <button onclick="updateText('0')" class="col">0</button>
+           <button onclick="updateText('.')" class="col">.</button>
+           <button onclick="updateText('/')" class="col">÷</button>
+       </div>
+       <div class="row text-center ">
+           <button onclick="operation()" class="col-12 equalSign">=</button>
+       </div>
+       <footer>
+           <p class="text-center">simple Calculator by Ansar</p>
+       </footer>
+   </div>
+    <script src="script.js"></script>
+</body>
+</html>
